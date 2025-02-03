@@ -9,7 +9,7 @@ def classify_diabetes(pregnancies, glucose, blood_pressure, skin_thickness, insu
     input_data_as_numpy_array = np.asarray(input_data)
     input_data_reshaped = input_data_as_numpy_array.reshape(1, -1)
     prediction = diabetesr_fc_clf_scaled_model.predict(input_data_reshaped)
-    prediction_prob = diabetesr_fc_clf_scaled_model.predict_proba(input_data_reshaped)[:,1]  # استخراج الاحتمال
+    prediction_prob = diabetesr_fc_clf_scaled_model.predict_proba(input_data_reshaped)[:,1]  
     return prediction, prediction_prob
 
 def main():
