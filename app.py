@@ -2,7 +2,7 @@ import streamlit as st
 import pickle
 import numpy as np
 
-diabetesr_fc_clf_scaled_model = pickle.load(open(r'D:\AMIT\amit\ODC\W3\D2\diabetes task\diabetes\diabetes.pkl', 'rb'))
+diabetesr_fc_clf_scaled_model = pickle.load(open(r'diabetes.pkl', 'rb'))
 
 def classify_diabetes(pregnancies, glucose, blood_pressure, skin_thickness, insulin, bmi, diabetes_pedigree_function, age):
     input_data = (pregnancies, glucose, blood_pressure, skin_thickness, insulin, bmi, diabetes_pedigree_function, age)
